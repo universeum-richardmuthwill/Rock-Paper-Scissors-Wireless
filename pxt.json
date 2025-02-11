@@ -1,5 +1,5 @@
 {
-    "name": "Rock Paper Scissors Wireless",
+    "name": "Rock Paper Scissors Wireless - Random",
     "description": "",
     "dependencies": {
         "core": "*",

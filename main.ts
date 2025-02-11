@@ -59,7 +59,6 @@ input.onButtonPressed(Button.A, function () {
                 # # . # #
                 `)
         }
-        basic.pause(1000)
         _continue = 1
     }
 })
@@ -146,6 +145,7 @@ radio.onReceivedValue(function (name, value) {
                     # . . . #
                     . # # # .
                     `)
+                music._playDefaultBackground(music.builtInPlayableMelody(Melodies.BaDing), music.PlaybackMode.InBackground)
             } else {
                 radio.sendValue("win", 0)
                 basic.showLeds(`
@@ -173,6 +173,7 @@ radio.onReceivedValue(function (name, value) {
                     # . . . #
                     . # # # .
                     `)
+                music._playDefaultBackground(music.builtInPlayableMelody(Melodies.BaDing), music.PlaybackMode.InBackground)
                 score += 1
             } else {
                 basic.showLeds(`
